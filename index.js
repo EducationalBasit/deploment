@@ -13,7 +13,7 @@ console.log('env',process.env.DB_PASSWORD)
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect(process.env.MONGO_URL);
+  await mongoose.connect(process.env.NONGO_URL);
   console.log('database connected')
 }
 //Schema
